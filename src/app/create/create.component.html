@@ -1,0 +1,11 @@
+<!-- create.component.html -->
+
+<div>
+    <h2>Create User</h2>
+    <form (submit)="createUser()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="newUser.name" required>
+      <button type="submit">Create</button>
+    </form>
+  </div>
+  

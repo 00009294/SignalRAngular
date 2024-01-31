@@ -1,0 +1,11 @@
+<!-- update.component.html -->
+
+<div *ngIf="updatedUser">
+    <h2>Edit User</h2>
+    <form (submit)="updateUser()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="updatedUser.name" required>
+      <button type="submit">Update</button>
+    </form>
+  </div>
+  

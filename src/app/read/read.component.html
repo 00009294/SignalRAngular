@@ -1,0 +1,14 @@
+<!-- read.component.html -->
+
+<div *ngIf="users && users.length > 0">
+    <h2>User List</h2>
+    <ul>
+      <li *ngFor="let user of users">
+        {{ user.name }}
+      </li>
+    </ul>
+  </div>
+  <div *ngIf="!users || users.length === 0">
+    <p>No users found.</p>
+  </div>
+  
